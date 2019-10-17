@@ -11,10 +11,10 @@ require_relative 'lib/board_case'
 
 
 # initialisation du jeu (création de la grille et des joueurs)
+class App
 my_game = Game.new
 my_game.first_player
 new_game = true
-
 while new_game == true
 	# tant que la partie n'est pas terminée on lance un tour
 	# chaque joueur pose un pion sur la grille à tour de rôle
@@ -35,7 +35,8 @@ while new_game == true
 	new_game = my_game.launch_new_game?
 
 end
-
+end
+#binding.pry
 
 
 

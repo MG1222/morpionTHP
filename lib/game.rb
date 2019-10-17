@@ -41,6 +41,7 @@ class Game
 
     def play_turn
         # on récupère le choix du joueur
+        puts " "
         puts " * #{@player_turn.name}, dans quelle case tu veux aller ?"
         player_id_choice = gets.chomp
         # on demande au joueur de rentrer une nouvelle case tant que celle-ci n'est pas correcte
